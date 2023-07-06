@@ -15,7 +15,7 @@ html{
 html{
     background-size:100%;
     background-image: url("img/lkt.jpg");
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-attachment: fixed;
 } 
 
