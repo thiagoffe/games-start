@@ -48,11 +48,10 @@ html{
   .main {
     margin-top: 30px; /* Add a top margin to avoid content overlay */
   }
-
-
+ 
 .programacao {
     color: white;
-    display:flex;
+    display: flex;
     justify-content:center;
     align-items: center;
     padding: 24px 0;
@@ -76,74 +75,19 @@ html{
     padding-left: 5%;
 }
 
-.ferramenta {
-    color: white;
-    justify-content:center;
-    align-items: center;
-    padding: 24px 0;
-}
+@media only screen and (max-width: 768px) {
+    .programacao {
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 5%;
+    }
 
-.ferramenta-titulo{
-    text-align: center;
-    padding: 50px 0;
-}
+    .programacao-imagem {
+        width: 90%;
+    }
 
-.ferramenta-grid {
-    display:grid;
-    grid-template-columns: 25% 25% 25% 25%;
-}
-
-.ferramenta-imagem{
-    width: 100%;
-}
-
-.ferramenta-imagem:hover{
-    filter: drop-shadow(0 0 0.75rem white);
-}
-
-.ferramenta-div {
-    text-align: center;
-    align-self: center;
-    padding-bottom: 20%;
-}
-
-.aula {
-    color: white;
-    justify-content:center;
-    align-items: center;
-    padding: 24px 0;
-}
-
-.aula-titulo{
-    text-align: center;
-    padding: 50px 0;
-}
-
-.aula-grid {
-    display:grid;
-    grid-template-columns: 33% 34% 33%;
-}
-
-.aula-imagem{
-    width: 50%;
-}
-
-.aula-div{
-    text-align: center;
-    padding: 32px ;
-}
-
-.aula-list-div{
-    text-align: left;
-    padding: 0px 64px;
-}
-
-.aula-icone{
-    vertical-align: middle;
-    width:32px;
-    padding: 16px;
-}
-
-.aula-icone:hover{
-    filter: invert(1);
+    .programacao-conteudo {
+        width: 100%;
+        text-shadow: 0 0 5px #0a0808;
+    }
 }
